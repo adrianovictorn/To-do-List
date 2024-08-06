@@ -1,0 +1,135 @@
+/* Reset geral para margens, preenchimentos e caixa de modelagem */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: rgb(3, 87, 3);
+    padding: 30px 40px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o alinhamento do conteúdo */
+}
+
+header img {
+    margin-top: 25px;
+}
+
+
+main h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    margin-left: 15px;
+}
+/* Estilo para a lista não ordenada e itens da lista */
+ul {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none; /* Remove os marcadores padrão da lista */
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #3f1f1f;
+    color: #fff;
+
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+
+/* Estilo para o campo de entrada */
+#info-note {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilo para o botão de adicionar */
+#add-button {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+#add-button:hover {
+    background-color: #bbb;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 10px; 
+    color: white;
+    background-color: black; 
+    text-align: center;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
